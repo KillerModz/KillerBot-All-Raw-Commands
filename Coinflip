@@ -1,0 +1,126 @@
+{
+  "name": "Coinflip",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "YwmAD",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "random-number",
+      "min": "1",
+      "max": "2",
+      "name": "Generate Random Number"
+    },
+    {
+      "storage": "1",
+      "varName": "random-number",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "5",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "random-number",
+      "comparison": "1",
+      "value": "2",
+      "iftrue": "2",
+      "iftrueVal": "9",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Coin Flipped",
+      "author": "",
+      "color": "#ff9100",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://lh5.googleusercontent.com/y3Z5EqPaFcRFlBqvRLwd4ZdVt7L5pS_tI6abaZE86WI6Fh4AIKiHYvw9gSgu6EGJBTJNsw",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "coin-flip-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "coin-flip-embed",
+      "message": "Coin landed on **Heads**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "coin-flip-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Coin Flipped",
+      "author": "",
+      "color": "#ff9100",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://lh5.googleusercontent.com/y3Z5EqPaFcRFlBqvRLwd4ZdVt7L5pS_tI6abaZE86WI6Fh4AIKiHYvw9gSgu6EGJBTJNsw",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "coin-flip-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "coin-flip-embed",
+      "message": "Coin landed on **Tails**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "coin-flip-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ]
+}
