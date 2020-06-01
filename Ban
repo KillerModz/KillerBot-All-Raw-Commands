@@ -1,0 +1,138 @@
+{
+  "name": "Ban",
+  "permissions": "BAN_MEMBERS",
+  "restriction": "1",
+  "actions": [
+    {
+      "info": "1",
+      "find": "| Jr. Moderator |",
+      "storage": "1",
+      "varName": "jr-moderator",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "role": "3",
+      "varName2": "jr-moderator",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check If Member has Role"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "Command Help",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "kick-wrong-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "kick-wrong-embed",
+      "message": "Please mention one user in order to ban them!\n!ban [@user] [Reason]",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "kick-wrong-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "reason",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "reason": "${tempVars(\"reason\") || \"\"}",
+      "name": "Ban Member"
+    },
+    {
+      "title": "**Banned**",
+      "author": "",
+      "color": "#9f40ff",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "kick-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "kick-embed",
+      "message": "${mentionedUser} was banned from the server.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "kick-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "aFCHg",
+  "customData": {
+    "Test Extension": {
+      "input1": 0,
+      "input2": 0
+    }
+  }
+}
