@@ -1,0 +1,55 @@
+{
+  "name": "Bot Joins Server",
+  "temp": "",
+  "event-type": "4",
+  "_id": "UIaQP",
+  "actions": [
+    {
+      "title": "Thanks For Inviting Me!",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "bot-welcome-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "bot-welcome-embed",
+      "message": "Thanks for invite me to your server! Please type `!help` for a list of commands!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "bot-welcome-embed",
+      "message": "KillerBot created by KillerModz",
+      "footerIcon": "https://img.icons8.com/pastel-glyph/2x/source-code--v1.png",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "bot-welcome-embed",
+      "channel": "4",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
