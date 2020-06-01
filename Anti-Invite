@@ -1,0 +1,91 @@
+{
+  "name": "Auto_Anti_Discord_Invite",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "JnJTd",
+  "actions": [
+    {
+      "message": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "txt",
+      "name": "Store Message Info"
+    },
+    {
+      "storage": "1",
+      "varName": "txt",
+      "comparison": "5",
+      "value": "discord.gg",
+      "iftrue": "2",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "txt",
+      "comparison": "5",
+      "value": "discord.com/invite",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "title": "Anti-Invite",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "anit-invite-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "anit-invite-embed",
+      "message": "Please don't post Server Invites in the Server. Thank you for your cooperation.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "anit-invite-embed",
+      "message": "Anti-Invite Server Protection",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "anit-invite-embed",
+      "channel": "1",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "3"
+}
