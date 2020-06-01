@@ -1,0 +1,157 @@
+{
+  "name": "Announce",
+  "permissions": "KICK_MEMBERS",
+  "restriction": "1",
+  "_id": "announ",
+  "actions": [
+    {
+      "condition": "0",
+      "comparison": "2",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "6",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "Incorrect Command",
+      "author": "",
+      "color": "Black",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "incorrect-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "incorrect-embed",
+      "message": "You forgot to say the announcement.\n!announce <message>",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "incorrect-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "message",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "Username",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "#${tempVars(\"hex\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "behavior": "0",
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "http://www.colr.org/json/color/random",
+      "path": "colors[0].hex",
+      "storage": "1",
+      "varName": "hex",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "info": "1",
+      "find": "🎙丨announcements",
+      "storage": "1",
+      "varName": "Channel",
+      "name": "Find Channel"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "Announcement from ${tempVars(\"Username\")}",
+      "color": "${tempVars(\"hex\")}\"",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "https://i.imgur.com/SZLwsEQ.png",
+      "imageUrl": "",
+      "thumbUrl": "https://i.imgur.com/PhV9o8S.png",
+      "storage": "1",
+      "varName": "ann-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "ann-embed",
+      "message": "${tempVars(\"message\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "ann-embed",
+      "message": "Important Announcement",
+      "footerIcon": "https://i.imgur.com/HVU2ZeW.png",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "ann-embed",
+      "channel": "5",
+      "varName2": "Channel",
+      "name": "Send Embed Message"
+    },
+    {
+      "channel": "5",
+      "varName": "Channel",
+      "message": "@everyone",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ],
+  "_aliases": []
+}
