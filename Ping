@@ -1,0 +1,71 @@
+{
+  "name": "ping",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "DeDFd",
+  "actions": [
+    {
+      "info": "23",
+      "storage": "1",
+      "varName2": "days",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "24",
+      "storage": "1",
+      "varName2": "hours",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "25",
+      "storage": "1",
+      "varName2": "minutes",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "26",
+      "storage": "1",
+      "varName2": "seconds",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "title": "Pong!",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Uptime",
+      "message": "${tempVars(\"days\")} days, ${tempVars(\"hours\")} hours, ${tempVars(\"minutes\")} minutes, ${tempVars(\"seconds\")} seconds.",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
