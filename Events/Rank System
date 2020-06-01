@@ -1,0 +1,111 @@
+{
+  "name": "Rank System",
+  "temp": "expgain",
+  "event-type": "2",
+  "_id": "QrTBu",
+  "actions": [
+    {
+      "info": "1",
+      "find": "🌌丨leveling",
+      "storage": "1",
+      "varName": "lvl-channel",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "lvl-channel",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "message": "1",
+      "varName": "expgain",
+      "info": "3",
+      "storage": "1",
+      "varName2": "member",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "exp",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "rank",
+      "defaultVal": "1",
+      "storage": "1",
+      "varName2": "userrank",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "exp",
+      "comparison": "4",
+      "value": "tempVars(\"userrank\")*30",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "rank",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "**You Leveled Up!**",
+      "author": "",
+      "color": "add8e6",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "message",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "message": "**Congrats! ${tempVars(\"member\")} Has Leveled Up To ${tempVars(\"userrank\")}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "channel": "5",
+      "varName2": "lvl-channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
