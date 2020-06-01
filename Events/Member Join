@@ -1,0 +1,55 @@
+{
+  "name": "Member Join",
+  "temp": "member",
+  "event-type": "0",
+  "_id": "NkmQi",
+  "actions": [
+    {
+      "info": "1",
+      "find": "👥丨joining",
+      "storage": "1",
+      "varName": "join-channel",
+      "name": "Find Channel"
+    },
+    {
+      "title": "**Welcome**",
+      "author": "",
+      "color": "#9f40ff",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://lh4.googleusercontent.com/S74vtA24Sahb5zednAeHxA_8lwPYCvbYuTws5yhaR73SmKJKCQZLBWZvmMuUrEGWiGSsiQ",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "welcome-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "welcome-embed",
+      "message": "Welcome ${tempVars(\"member\")} to **SupremeModz Modding Service**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "welcome-embed",
+      "channel": "5",
+      "varName2": "join-channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
