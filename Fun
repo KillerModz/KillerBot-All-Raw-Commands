@@ -1,0 +1,48 @@
+{
+  "name": "Fun",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "MdjPv",
+  "actions": [
+    {
+      "title": "Fun Commands",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "fun-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "fun-embed",
+      "message": "**!unsult <@user>** -> Insults the taged user.\n**!trash <@user>** -> Trash the tagged user.\n**!8ball <question>** -> Magic 8ball answers the question.\n**!weather <location>** -> Tells the weather of the location.\n**!coinflip** -> Randomly flips a coin.\n**!meme** -> Sends a random fresh meme.\n**!cat** -> Sends a random picture of a cat.\n**!dog** -> Sends a random picture of a dog.\n",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "fun-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
