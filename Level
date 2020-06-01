@@ -1,0 +1,74 @@
+{
+  "name": "level",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "iTNBp",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "exp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "member-exp",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "rank",
+      "defaultVal": "1",
+      "storage": "1",
+      "varName2": "member-rank",
+      "name": "Store Member Data"
+    },
+    {
+      "title": "**Your Level Card**",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "exp-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "exp-embed",
+      "message": "You Are Level **${tempVars(\"member-rank\")}**\nYou Currently Have **${tempVars(\"member-exp\")}** Experience Points.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "exp-embed",
+      "message": "Get more experience points by being active in chat!",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "exp-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
