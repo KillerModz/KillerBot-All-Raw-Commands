@@ -1,0 +1,48 @@
+{
+  "name": "moderation",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "VgZBF",
+  "actions": [
+    {
+      "title": "Moderation Commands",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "mod-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "mod-embed",
+      "message": "**!kick <@user>** -> Kicks the tagged user from the server.\n**!ban <@user>** -> Bans the tagged user from the server.\n**!unban <@userid>** -> Unbans the tagged user from the server.\n**!mute <@user>** -> Mutes the tagged user.\n**!unmute <@user>** -> Unmutes the tagged user.\n**!purge <ammount>** -> Deletes amount of messages.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "mod-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
