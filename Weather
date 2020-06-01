@@ -1,0 +1,166 @@
+{
+  "name": "Weather",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "WVPLf",
+  "actions": [
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "7",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "Incorrect Command",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "weather-incorrect-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "weather-incorrect-embed",
+      "message": "Please enter the location.\n!weather <location>",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "weather-incorrect-embed",
+      "message": "",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "weather-incorrect-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "0",
+      "ParamN": "1",
+      "separator": "",
+      "storage": "1",
+      "varName2": "city",
+      "name": "Store Message Params"
+    },
+    {
+      "city": "${tempVars(\"city\")}",
+      "degreeType": "C",
+      "info": "1",
+      "storage": "1",
+      "varName": "balls",
+      "name": "Weather"
+    },
+    {
+      "city": "${tempVars(\"city\")}",
+      "degreeType": "C",
+      "info": "0",
+      "storage": "1",
+      "varName": "temp",
+      "name": "Weather"
+    },
+    {
+      "city": "${tempVars(\"city\")}",
+      "degreeType": "F",
+      "info": "9",
+      "storage": "1",
+      "varName": "humid",
+      "name": "Weather"
+    },
+    {
+      "city": "${tempVars(\"city\")}",
+      "degreeType": "C",
+      "info": "14",
+      "storage": "1",
+      "varName": "reelfeel",
+      "name": "Weather"
+    },
+    {
+      "city": "${tempVars(\"city\")}",
+      "degreeType": "C",
+      "info": "6",
+      "storage": "1",
+      "varName": "wind speed",
+      "name": "Weather"
+    },
+    {
+      "city": "${tempVars(\"city\")}",
+      "degreeType": "C",
+      "info": "8",
+      "storage": "1",
+      "varName": "windir",
+      "name": "Weather"
+    },
+    {
+      "title": "Weather in ${tempVars(\"city\")}",
+      "author": "",
+      "color": "ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "message": "Weather: ${tempVars(\"balls\")}\nTemp: ${tempVars(\"temp\")} °C\nHumidity: ${tempVars(\"humid\")} %\nFeels Like: ${tempVars(\"reelfeel\")} °C\nWind Speed: ${tempVars(\"wind speed\")}\nWind Direction: ${tempVars(\"windir\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
