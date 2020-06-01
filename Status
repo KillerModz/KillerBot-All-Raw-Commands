@@ -1,0 +1,55 @@
+{
+  "name": "status",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "_id": "pTvGQ",
+  "actions": [
+    {
+      "activity": "2",
+      "nameText": "KillerModz | !help",
+      "url": "",
+      "stat": "0",
+      "name": "Set Bot Activity"
+    },
+    {
+      "title": "**Bot Status Update**",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://lh4.googleusercontent.com/S74vtA24Sahb5zednAeHxA_8lwPYCvbYuTws5yhaR73SmKJKCQZLBWZvmMuUrEGWiGSsiQ",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "status-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "status-embed",
+      "message": "Bots status updated **successfully**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "status-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
