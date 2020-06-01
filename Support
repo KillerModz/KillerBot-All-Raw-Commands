@@ -1,0 +1,48 @@
+{
+  "name": "support",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "TxAiZ",
+  "actions": [
+    {
+      "title": "Support Commands",
+      "author": "",
+      "color": "BLACK",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "support-embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "support-embed",
+      "message": "!ticket <reason> -> Opens a ticket for support.\n!clostticket <ticket channel name> -> Closes the ticket.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "support-embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
