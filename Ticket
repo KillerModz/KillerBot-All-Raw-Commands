@@ -1,0 +1,169 @@
+{
+  "name": "ticket",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "wzQEj",
+  "actions": [
+    {
+      "comment": "Created by iiShadow! No reposting :)",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "ticketnum",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Server Data"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "ticketnum",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "numbers",
+      "name": "Store Server Data"
+    },
+    {
+      "info": "1",
+      "find": "greenmark",
+      "storage": "1",
+      "varName": "check",
+      "name": "Find Custom Emoji"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "pararas",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"check\")} Successfully created your ticket!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channelName": "ticket-${tempVars(\"numbers\")}",
+      "topic": "",
+      "position": "",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Create Text Channel"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "BLUE",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"avatar\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embedmsg",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embedmsg",
+      "message": "**New ticket from ${tempVars(\"username\")}!**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embedmsg",
+      "fieldName": "Ticket Message:",
+      "message": "${tempVars(\"pararas\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embedmsg",
+      "message": "",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embedmsg",
+      "channel": "5",
+      "varName2": "channel",
+      "name": "Send Embed Message"
+    },
+    {
+      "info": "1",
+      "find": "| Subscribers |",
+      "storage": "1",
+      "varName": "findrole",
+      "name": "Find Role"
+    },
+    {
+      "channel": "3",
+      "varName": "channel",
+      "role": "3",
+      "varName2": "findrole",
+      "permission": "READ_MESSAGES",
+      "state": "2",
+      "name": "Set Role Channel Perms"
+    },
+    {
+      "info": "1",
+      "find": "| Jr. Moderator |",
+      "storage": "1",
+      "varName": "findticketrole",
+      "name": "Find Role"
+    },
+    {
+      "member": "1",
+      "varName2": "",
+      "role": "3",
+      "varName": "findticketrole",
+      "name": "Add Member Role"
+    },
+    {
+      "channel": "3",
+      "varName": "channel",
+      "role": "3",
+      "varName2": "findticketrole",
+      "permission": "READ_MESSAGES",
+      "state": "0",
+      "name": "Set Role Channel Perms"
+    },
+    {
+      "comment": "EDIT ALL THE FIND ROLES ABOVE ^^^",
+      "color": "#000000",
+      "name": "Comment"
+    }
+  ]
+}
